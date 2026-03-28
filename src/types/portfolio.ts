@@ -63,18 +63,12 @@ export type ExperienceContent = {
   roles: ExperienceRole[];
 };
 
-export type ProjectItem = {
-  title: string;
-  description: string;
-  tags: string[];
-  href: string;
-  linkLabel: string;
-};
+import type { Project } from "@/types/project";
 
 export type ProjectsContent = {
   sectionLabel: string;
   sectionTitle: string;
-  items: ProjectItem[];
+  items: Project[];
 };
 
 export type ContactLink = {
