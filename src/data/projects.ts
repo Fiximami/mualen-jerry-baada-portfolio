@@ -17,6 +17,10 @@ export const projectsContent: ProjectsContent = {
         "Startup strategy and marketplace structure",
       ],
       liveLink: "https://fiximami.org",
+      image: "/projects/fiximami.png",
+      imageAlt: "FixiMami marketing landing page",
+      secondaryImage: "/projects/fiximamistore.png",
+      secondaryImageAlt: "FixiMami store experience preview",
     },
     {
       title: "Sarsson Accounting Website",
@@ -32,6 +36,8 @@ export const projectsContent: ProjectsContent = {
         "Digital visibility support",
       ],
       liveLink: "https://sarssonaccounting.com",
+      image: "/projects/SAH.png",
+      imageAlt: "Sarsson Accounting website homepage",
     },
     {
       title: "Mecellino Haven",

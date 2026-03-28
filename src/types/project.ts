@@ -7,4 +7,9 @@ export type Project = {
   whatIHandled: string[];
   liveLink?: string;
   githubLink?: string;
+  /** Path under `/public`, e.g. `/projects/fiximami.png` */
+  image?: string;
+  imageAlt?: string;
+  secondaryImage?: string;
+  secondaryImageAlt?: string;
 };
