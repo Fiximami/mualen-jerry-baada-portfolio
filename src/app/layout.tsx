@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     "Software Engineer Portfolio",
     "Ghana Developer",
   ],
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
