@@ -37,7 +37,7 @@ export function Navbar() {
       }`}
     >
       <nav
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 sm:px-8 lg:px-12"
+        className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:gap-6 sm:px-7 lg:px-10"
         aria-label="Primary"
       >
         <Link
@@ -104,7 +104,7 @@ export function Navbar() {
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="border-t border-card-border bg-background/95 backdrop-blur-md md:hidden"
           >
-            <ul className="flex flex-col gap-0.5 px-5 py-4 sm:px-8">
+            <ul className="flex flex-col gap-0.5 px-4 py-4 sm:px-7">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link

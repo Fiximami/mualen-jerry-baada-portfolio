@@ -18,19 +18,19 @@ export function SkillsSection() {
           label={skillsContent.sectionLabel}
           title={skillsContent.sectionTitle}
         />
-        <ul className="mt-14 grid gap-6 sm:grid-cols-2 md:mt-16 lg:grid-cols-3 lg:gap-8">
+        <ul className="mt-10 grid list-none gap-5 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-6 md:mt-14 lg:grid-cols-3 lg:gap-7">
           {skillsContent.groups.map((group) => (
             <li
               key={group.title}
-              className="rounded-2xl border border-card-border bg-card p-7 shadow-[0_1px_0_0_rgba(15,23,42,0.04)] transition-[border-color] duration-200 dark:shadow-none md:p-8"
+              className="rounded-2xl border border-card-border bg-card p-6 shadow-[0_1px_0_0_rgba(15,23,42,0.04)] transition-[border-color] duration-200 dark:shadow-none sm:p-7"
             >
-              <h3 className="font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-label">
+              <h3 className="font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-label sm:text-[11px]">
                 {group.title}
               </h3>
-              <ul className="mt-6 flex flex-wrap gap-2">
+              <ul className="mt-4 flex flex-wrap gap-2 sm:mt-5">
                 {group.items.map((item) => (
                   <li key={item}>
-                    <span className="inline-flex rounded-md border border-card-border bg-background/80 px-3 py-1.5 text-sm text-foreground dark:bg-background/50">
+                    <span className="inline-flex rounded-md border border-card-border bg-background/80 px-2.5 py-1 text-[13px] leading-snug text-foreground dark:bg-background/50">
                       {item}
                     </span>
                   </li>

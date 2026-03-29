@@ -16,9 +16,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mualen Jerry Baada — Full Stack Developer & Product Builder",
+  title: "Mualen Jerry Baada | Full Stack Developer",
   description:
-    "Full stack developer and technical support specialist building digital platforms, mobile apps, and web products—Flutter, Next.js, TypeScript, WordPress.",
+    "Full Stack Developer and Technical Support professional building practical digital platforms including FixiMami, Nestorics, and product-driven web solutions.",
+  keywords: [
+    "Full Stack Developer",
+    "Next.js Developer",
+    "Flutter Developer",
+    "Technical Support Engineer",
+    "Software Engineer Portfolio",
+    "Ghana Developer",
+  ],
 };
 
 export default function RootLayout({

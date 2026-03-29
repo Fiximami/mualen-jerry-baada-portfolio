@@ -62,7 +62,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   font-feature-settings: "kern" 1, "liga" 1;
+  font-size: 16px;
+  line-height: 1.55;
   text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.dark ::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
 }
 
 @keyframes scroll-hint {
