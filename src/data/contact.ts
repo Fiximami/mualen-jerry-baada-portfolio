@@ -1,4 +1,5 @@
 import type { ContactContent } from "@/types/portfolio";
+import { assets } from "@/data/assets";
 
 export const contactContent: ContactContent = {
   sectionLabel: "Contact",
@@ -24,7 +25,7 @@ export const contactContent: ContactContent = {
       icon: "github",
     },
     {
-      href: "/Mualen-Jerry-Baada-CV.pdf",
+      href: assets.resumePdf,
       label: "Download CV",
       sub: "PDF",
       icon: "cv",

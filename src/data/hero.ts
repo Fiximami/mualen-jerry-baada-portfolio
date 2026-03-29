@@ -1,12 +1,17 @@
 import type { HeroContent } from "@/types/portfolio";
+import { assets } from "@/data/assets";
 
 export const heroContent: HeroContent = {
-  eyebrow: "Full Stack Developer · Technical Support · Product Builder",
   name: "Mualen Jerry Baada",
+  headline: "Full Stack Developer | Technical Support | Product Builder",
   tagline:
     "I build digital platforms that solve real-world problems by combining software development, technical support experience, and product innovation.",
-  primaryCta: { href: "#projects", label: "View projects" },
-  secondaryCta: { href: "#contact", label: "Get in touch" },
+  primaryCta: {
+    href: assets.resumePdf,
+    label: "Download CV",
+    download: true,
+  },
+  secondaryCta: { href: "#projects", label: "View Projects" },
   socials: [
     {
       href: "https://github.com/MualenJerryBaada",
@@ -25,4 +30,5 @@ export const heroContent: HeroContent = {
     },
   ],
   scrollTargetId: "#about",
+  profileImage: assets.profilePhoto,
 };

@@ -15,9 +15,11 @@ export function AboutSection() {
           title={aboutContent.sectionTitle}
         />
         <div className="mt-14 grid gap-12 md:mt-16 md:grid-cols-[minmax(0,1fr)_minmax(0,22rem)] md:items-start md:gap-16 lg:gap-20">
-          <p className="max-w-xl text-base leading-[1.7] text-muted md:text-lg">
-            {aboutContent.body}
-          </p>
+          <div className="max-w-xl space-y-5 text-base leading-[1.7] text-muted md:text-lg">
+            {aboutContent.body.split("\n\n").map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
           <div className="rounded-2xl border border-card-border bg-surface/40 p-7 font-mono text-sm text-muted-faint shadow-[0_1px_0_0_rgba(15,23,42,0.04)] dark:bg-card dark:shadow-none md:p-8">
             <dl className="space-y-5">
               {aboutContent.meta.map((row, i) => (

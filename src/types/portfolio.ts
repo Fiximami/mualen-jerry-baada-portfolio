@@ -8,6 +8,7 @@ export type SocialIconId = "github" | "linkedin" | "mail" | "cv";
 export type HeroAction = {
   href: string;
   label: string;
+  download?: boolean;
 };
 
 export type HeroSocialLink = {
@@ -17,13 +18,15 @@ export type HeroSocialLink = {
 };
 
 export type HeroContent = {
-  eyebrow: string;
   name: string;
+  headline: string;
   tagline: string;
   primaryCta: HeroAction;
   secondaryCta: HeroAction;
   socials: HeroSocialLink[];
   scrollTargetId: string;
+  /** Path under `/public`; omit if no photo */
+  profileImage?: string;
 };
 
 export type AboutMetaRow = {
