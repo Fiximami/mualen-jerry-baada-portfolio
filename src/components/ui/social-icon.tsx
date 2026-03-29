@@ -1,12 +1,17 @@
 import { FileDown, Mail } from "lucide-react";
 import type { SocialIconId } from "@/types/portfolio";
-import { IconGithub, IconLinkedin } from "@/components/ui/brand-icons";
+import {
+  IconGithub,
+  IconLinkedin,
+  IconWhatsapp,
+} from "@/components/ui/brand-icons";
 
 const icons = {
   github: IconGithub,
   linkedin: IconLinkedin,
   mail: Mail,
   cv: FileDown,
+  whatsapp: IconWhatsapp,
 } as const;
 
 type SocialIconProps = {

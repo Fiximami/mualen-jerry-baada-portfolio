@@ -3,7 +3,12 @@ export type NavLink = {
   label: string;
 };
 
-export type SocialIconId = "github" | "linkedin" | "mail" | "cv";
+export type SocialIconId =
+  | "github"
+  | "linkedin"
+  | "mail"
+  | "cv"
+  | "whatsapp";
 
 export type HeroAction = {
   href: string;

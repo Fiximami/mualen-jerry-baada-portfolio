@@ -14,19 +14,24 @@ export const heroContent: HeroContent = {
   secondaryCta: { href: "#projects", label: "View Projects" },
   socials: [
     {
-      href: "https://github.com/MualenJerryBaada",
-      label: "GitHub",
-      icon: "github",
+      href: "mailto:kwesijerry56@gmail.com",
+      label: "Email",
+      icon: "mail",
     },
     {
-      href: "https://www.linkedin.com/in/mualen-jerry-baada/",
+      href: "https://www.linkedin.com/in/mualen-baada-jerry-/",
       label: "LinkedIn",
       icon: "linkedin",
     },
     {
-      href: "mailto:mualenjerrybaada@gmail.com",
-      label: "Email",
-      icon: "mail",
+      href: "https://github.com/Fiximami",
+      label: "GitHub",
+      icon: "github",
+    },
+    {
+      href: assets.whatsappChatUrl,
+      label: "WhatsApp",
+      icon: "whatsapp",
     },
   ],
   scrollTargetId: "#about",
