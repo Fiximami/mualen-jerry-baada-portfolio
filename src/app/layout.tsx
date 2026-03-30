@@ -15,18 +15,19 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Mualen Jerry Baada | Full Stack Developer";
-const description =
+const portfolioTitle = "Mualen Jerry Baada | Full Stack Developer";
+const portfolioDescription =
   "Full Stack Developer and Technical Support professional building practical digital platforms including FixiMami, Nestorics, and product-driven web solutions.";
 
-const site =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+);
+
+const ogUrl = new URL("/", metadataBase).toString();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site),
-  title,
-  description,
+  title: portfolioTitle,
+  description: portfolioDescription,
   keywords: [
     "Full Stack Developer",
     "Next.js Developer",
@@ -36,12 +37,12 @@ export const metadata: Metadata = {
     "Ghana Developer",
   ],
   icons: { icon: "/favicon.ico" },
+  metadataBase,
   openGraph: {
-    title,
-    description,
-    url: "/",
-    type: "website",
-    images: [{ url: "/profile/mualen-jerry-baada.jpeg", alt: title }],
+    title: portfolioTitle,
+    description: portfolioDescription,
+    url: ogUrl,
+    images: [{ url: "/portfolio-preview.png" }],
   },
 };
 
