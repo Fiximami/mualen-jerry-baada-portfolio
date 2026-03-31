@@ -33,7 +33,7 @@ export const experienceContent: ExperienceContent = {
       title: "Digital Platform Developer & Operations Support",
       period: "Contract",
       summary:
-        "Built and supported the digital side of a market operation—reliable workflows, practical integrations, and day-to-day stability for staff and customers.",
+        "Built and supported the digital side of a market operation, reliable workflows, practical integrations, and day-to-day stability for staff and customers.",
       highlights: [
         "Implement and refine platform features aligned with how the business actually runs.",
         "Support operations alongside development so releases do not outpace adoption.",
@@ -49,7 +49,7 @@ export const experienceContent: ExperienceContent = {
       highlights: [
         "Plan and execute digital campaigns with clear audiences and success signals.",
         "Coordinate content and stakeholders across academic and administrative units.",
-        "Report outcomes in plain language—not vanity metrics without context.",
+        "Report outcomes in plain language, not vanity metrics without context.",
       ],
     },
     {
